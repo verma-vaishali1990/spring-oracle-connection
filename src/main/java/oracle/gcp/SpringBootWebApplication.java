@@ -26,8 +26,8 @@ public class SpringBootWebApplication {
     	 try {
  			System.err.println(jdbcTemplate.getDataSource().getConnection());
  		} catch (SQLException e) {
- 			// TODO Auto-generated catch block
  			e.printStackTrace();
+ 			return "Unable to Connect";
  		}
     	 return "Connected";
     }
